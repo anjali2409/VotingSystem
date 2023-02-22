@@ -5,6 +5,19 @@
 <struts>
     <!-- Configuration for the default package. -->
     <package name="default" namespace="/" extends="struts-default">
+        <action name="Login" class="com.exavalu.models.User" method="doLogin">
+            <result name="VOTER">voterLandingPage.jsp</result>
+            <result name="ADMIN">adminLandingPage.jsp</result>
+            <result name="FAILURE">login.jsp</result>
+        </action>
+        <action name="PreSignup" class="com.exavalu.models.Voter" method="doPreSignup">
+            <result name="SUCCESS">signup.jsp</result>
+            <result name="FAILURE">landingPage.jsp</result>
+        </action>
+        <action name="Signup" class="com.exavalu.models.Voter" method="doSignup">
+            <result name="SUCCESS">login.jsp</result>
+            <result name="FAILURE">landingPage.jsp</result>
+        </action>
     </package>
 </struts>
 
