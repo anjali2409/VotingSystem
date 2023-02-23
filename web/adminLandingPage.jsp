@@ -1,7 +1,7 @@
 <%-- 
     Document   : landingPage
     Created on : 22-Dec-2022, 12:00:33 PM
-    Author     : Shouvik Samadder
+    Author     : Boka C..Chele
 --%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
